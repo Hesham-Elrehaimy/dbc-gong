@@ -1,0 +1,25 @@
+{
+  "name": "something_beautiful_meaningful",
+  "version": "1.0.0",
+  "description": "chidbcgong",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hesham-Elrehaimy/dbc-gong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "cron": "^1.2.1",
+    "dotenv": "^4.0.0",
+    "node-rest-client": "^2.0.1",
+    "node-schedule": "^1.2.0",
+    "node-twitterbot": "^0.2.2",
+    "twit": "^2.2.5",
+    "wordfilter": "^0.2.6"
+  }
+}
