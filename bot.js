@@ -25,11 +25,11 @@ var cronJob4 = cron.job("00 59 19 * * 1-5", function(){
 var cronJob5 = cron.job("00 00 20 * * 1-5", function(){
   	t.tweet("GONNNNNGGGG - After lunch stand up!");
 }); 
-var cronJob6 = cron.job("00 00 02 * * 1-5", function(){
+var cronJob6 = cron.job("00 00 00 * * 1-5", function(){
   	t.tweet("GONNNNNGGGG - End of core hours!");
 }); 
 
-var cronJob7 = cron.job("00 00 02 * * SAT", function(){
+var cronJob7 = cron.job("00 00 00 * * SAT", function(){
   	t.tweet("GONNNNNGGGG - End of core hours!");
 }); 
 
