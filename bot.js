@@ -10,28 +10,24 @@ var t = new TwitterBot({
 });
 
 var cronJob1 = cron.job("00 59 14 * * 1-5", function(){
-  	t.tweet("GONNNNNGGGG - Morning stand up after 1 minute!");
-}); 
+    t.tweet("GONNNNNGGGG - Morning stand up after 1 minute! Get your inspirational quote ready!");
+});
 var cronJob2 = cron.job("00 00 15 * * 1-5", function(){
-  	t.tweet("GONNNNNGGGG - Morning stand up!");
-}); 
+    t.tweet("GONNNNNGGGG - Morning stand up!");
+});
 var cronJob3 = cron.job("00 30 18 * * 1-5", function(){
-  	t.tweet("GONNNNNGGGG - Lunch Time!");
-}); 
+    t.tweet("GONNNNNGGGG - Lunch Time! 🍕🍔☕");
+});
 
 var cronJob4 = cron.job("00 59 19 * * 1-5", function(){
-  	t.tweet("GONNNNNGGGG - After lunch stand up after 1 minute!");
-}); 
+    t.tweet("GONNNNNGGGG - After lunch stand up after 1 minute! Got a joke for us today?");
+});
 var cronJob5 = cron.job("00 00 20 * * 1-5", function(){
-  	t.tweet("GONNNNNGGGG - After lunch stand up!");
-}); 
-var cronJob6 = cron.job("00 00 00 * * 1-5", function(){
-  	t.tweet("GONNNNNGGGG - End of core hours!");
-}); 
-
-var cronJob7 = cron.job("00 00 00 * * SAT", function(){
-  	t.tweet("GONNNNNGGGG - End of core hours!");
-}); 
+    t.tweet("GONNNNNGGGG - After lunch stand up!");
+});
+var cronJob6 = cron.job("00 00 00 * * 2-6", function(){
+    t.tweet("GONNNNNGGGG - End of core hours!👏👏👏");
+});
 
 cronJob1.start();
 cronJob2.start();
@@ -39,4 +35,3 @@ cronJob3.start();
 cronJob4.start();
 cronJob5.start();
 cronJob6.start();
-cronJob7.start();
