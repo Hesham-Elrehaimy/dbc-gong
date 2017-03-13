@@ -9,23 +9,23 @@ var t = new TwitterBot({
   access_token_secret:   process.env.DBCG_TWIT_ACCESS_TOKEN_SECRET
 });
 
-var cronJob1 = cron.job("00 59 14 * * 1-5", function(){
+var cronJob1 = cron.job("00 59 13 * * 1-5", function(){
     t.tweet("GONNNNNGGGG - Morning stand up after 1 minute! Get your inspirational quote ready!");
 });
-var cronJob2 = cron.job("00 00 15 * * 1-5", function(){
+var cronJob2 = cron.job("00 00 14 * * 1-5", function(){
     t.tweet("GONNNNNGGGG - Morning stand up!");
 });
-var cronJob3 = cron.job("00 30 18 * * 1-5", function(){
+var cronJob3 = cron.job("00 30 17 * * 1-5", function(){
     t.tweet("GONNNNNGGGG - Lunch Time! 🍕🍔☕");
 });
 
-var cronJob4 = cron.job("00 59 19 * * 1-5", function(){
+var cronJob4 = cron.job("00 59 18 * * 1-5", function(){
     t.tweet("GONNNNNGGGG - After lunch stand up after 1 minute! Got a joke for us today?");
 });
-var cronJob5 = cron.job("00 00 20 * * 1-5", function(){
+var cronJob5 = cron.job("00 00 19 * * 1-5", function(){
     t.tweet("GONNNNNGGGG - After lunch stand up!");
 });
-var cronJob6 = cron.job("00 00 00 * * 2-6", function(){
+var cronJob6 = cron.job("00 00 23 * * 1-5", function(){
     t.tweet("GONNNNNGGGG - End of core hours!👏👏👏");
 });
 
@@ -35,3 +35,4 @@ cronJob3.start();
 cronJob4.start();
 cronJob5.start();
 cronJob6.start();
+
